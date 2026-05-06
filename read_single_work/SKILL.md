@@ -1,6 +1,6 @@
 ---
-name: read_arch_work
-description: 需要阅读计算机体系结构相关的论文或者专利并总结精炼出阅读报告时使用
+name: read_single_work
+description: 需要阅读一篇计算机体系结构相关的论文或者专利并总结精炼出一篇阅读报告时使用
 ---
 
 # Read Arch Work
