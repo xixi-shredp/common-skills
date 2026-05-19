@@ -3,7 +3,7 @@ title: "I-POP (2026 HPCA): Ignite Positive Prefetchers"
 date: 2026-03-22 23:41:34
 categories:
 description: "2026 HPCA 论文阅读：I-POP 多预取器管理"
-tags: [HPCA, 2026]
+tags: [HPCA, paper]
 ---
 
 整体上，这篇论文不是在发明一个新的 prefetcher，而是在解决一个更“系统级”的问题：**多个 prefetcher 同时存在时，怎样动态决定谁该开、谁该关、谁该更激进**
@@ -41,15 +41,15 @@ TLDR:
 
 ...
 
-## 1. useful prefetch 的收益 $I_{UPF}$
+## Insight 1. useful prefetch 的收益 $I_{UPF}$
 
 ...
 
-## 2. cache pollution 的损失 $I_{POLL}$
+## Insight 2. cache pollution 的损失 $I_{POLL}$
 
 ...
 
-## 3. 竞争导致的延迟损失 $I_{LAT}$
+## Insight 3. 竞争导致的延迟损失 $I_{LAT}$
 
 ...
 

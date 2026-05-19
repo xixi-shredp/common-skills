@@ -3,7 +3,7 @@ title: "<核心设计简称>(<公司名> <专利号>)[<年份>]: <专利标题>"
 date: <时间>
 categories: 
 description: "<公司名> 专利(<专利号>) [<年份>] 解读： <核心设计简称> <一句话总结核心设计点>"
-tags: [<年份>, <公司名>]
+tags: [<公司名>, patent]
 ---
 
 | Title | Patent Number | Inc. | Year | url |
@@ -32,6 +32,12 @@ TLDR：
 # Insight
 
 此处需要详细一点，尽量将 Insight 描述清楚
+...
+
+## Insight1: ...
+...
+
+## Insight2: ...
 ...
 
 ---
