@@ -10,12 +10,12 @@ description: 根据某一个主题检索查找相关工作（论文和专利）�
 ## workflow SOP
 
 1. 根据主题在检索源下进行论文/专利检索
-2. 对于检索出的每一篇论文/专利，启动一个 subagent(model: gpt-5.3-codex-spark)，按照"检索候选项判定标准"进行判定
-3. 对于论文候选项，启动一个 subagent (model: gpt-5.3-codex-spark) 阅读该论文的参考文献部分，找出参考文献中和论文主题比较符合的论文也纳入本次检索的候选项
+2. 对于检索出的每一篇论文/专利，启动一个 subagent(model: gpt-5.3-codex-spark, effort: xhigh)，按照"检索候选项判定标准"进行判定
+3. 对于论文候选项，启动一个 subagent (model: gpt-5.3-codex-spark, effort: xhigh) 阅读该论文的参考文献部分，找出参考文献中和论文主题比较符合的论文也纳入本次检索的候选项
 4. 如果论文候选项是来自 arxiv 的预印本，再尝试检索，尽量找到真正发表的版本
 5. 将搜集到的相关的论文和专利整理到用户工作目录下的 `related_work.md`
     - markdown 内容格式参考 [related_work.md](examples/related_work.md)
-6. 启动一个新的 subagent (model: gpt-5.3-codex-spark) 检查当前的搜索结果是否有遗漏的论文和专利，如果有，重复步骤 1-6，直到没有遗漏的相关工作
+6. 启动一个新的 subagent (model: gpt-5.3-codex-spark, effort: xhigh) 检查当前的搜索结果是否有遗漏的论文和专利，如果有，重复步骤 1-6，直到没有遗漏的相关工作
 7. 停下来询问用户：是否下载相关工作的文件到用户工作目录下的 sources/ 下
 
 ## 检索源
