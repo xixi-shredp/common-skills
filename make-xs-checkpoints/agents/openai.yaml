@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make XiangShan Checkpoints"
+  short_description: "Build OpenSBI Linux workloads and GCPT images"
+  default_prompt: "Use $make-xs-checkpoints to prepare a XiangShan OpenSBI Linux workload and GCPT checkpoint input."
