@@ -1,0 +1,4 @@
+interface:
+  display_name: "PNG to draw.io"
+  short_description: "Rebuild diagram PNGs as editable draw.io files"
+  default_prompt: "Use $png2drawio to reconstruct this diagram PNG as an editable draw.io file and refine it until normalized pixel MAE is below 5%."
